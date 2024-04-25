@@ -20,4 +20,3 @@ export default defineConfig(({ command, mode }) => {
     },
   };
 });
-https://velog.velcdn.com/images/lee7198/post/81447611-8edf-41ad-8032-66bf91ece5e0/image.png
