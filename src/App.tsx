@@ -10,9 +10,12 @@ function App() {
 
     const queryFn = async () => {
 
-      const response = await fetch(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=레빗홀&language=ko&key=AIzaSyDg6ffV2VjRNDwVG8hKSbla1JVWH_iYek0`,
+      const response = await fetch(`/v1/maps/api/place/textsearch/json?query=레빗홀&language=ko&key=AIzaSyDg6ffV2VjRNDwVG8hKSbla1JVWH_iYek0`,
         {
           method: "GET",
+          headers: {
+            "Content-Type": "application.json",
+          },
         }
       )
       const data = await response.json();
