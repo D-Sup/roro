@@ -19,8 +19,6 @@ export default defineConfig({
         // SSL 인증서 검증 무시
         secure: false,
         // WebSocket 프로토콜 사용
-
-        
         ws: true,
       },
     },
